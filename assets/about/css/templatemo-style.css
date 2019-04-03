@@ -3,9 +3,9 @@
 	http://www.templatemo.com/preview/templatemo_439_rectangle
 */
 		
-
+/*
 @font-face {
-  font-family: 'robotolight';
+  font-family: 'robotoregular';
   src: url("../fonts/Roboto-Light-webfont.eot");
   src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
   font-weight: normal;
@@ -25,6 +25,22 @@
   font-weight: normal;
   font-style: normal;
 }
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800');
+@import url('https://www.w3schools.com/whatis/tryit.asp?font=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Russo%20One');
+
+
+:root {
+  --main-bg-color: #fff;;
+  --main-font-family: 'Russo One';
+  --main-color: #555;
+  --main-line-height: 26px;
+  --main-h2-color: #296DC1;
+}
+
 
 .green {
 	color: #9F3;
@@ -47,6 +63,7 @@ html, body, div, span, applet, object, iframe, h1, h2,  h4, h5, h6, p, blockquot
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: var(--main-font-family);
 }
 
 main {
@@ -183,7 +200,7 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: white;
-  font-family: 'robotolight';
+  font-family: var(--main-font-family);
 }
 
 a {
@@ -260,14 +277,14 @@ h1, h2, h3, h4, h5 {
 .box-content {
   background: white;
   color: #555;
-  font-family: 'robotolight';
+  font-family: var(--main-font-family);
   padding: 30px;
   margin-top: 30px;
 }
 .box-content .widget-title {
   font-size: 22px;
   color: #333;
-  font-family: 'robotolight';
+  font-family: var(--main-font-family);
   margin-bottom: 30px;
 }
 
@@ -277,13 +294,13 @@ h1, h2, h3, h4, h5 {
 }
 .welcome-text h2 {
   font-size: 32px;
-  font-family: 'robotolight';
+  font-family: var(--main-font-family);
   margin-bottom: 30px;
   color: #568298;
 }
 .welcome-text p {
   font-size: 18px;
-  font-family: 'robotolight';
+  font-family: var(--main-font-family);
 }
 
 .welcome-text h2 strong {
@@ -443,7 +460,7 @@ h1, h2, h3, h4, h5 {
   background: rgba(0, 0, 0, 0.3);
   padding: 15px 30px;
   text-transform: uppercase;
-  font-family: 'robotoregular';
+  font-family: var(--main-font-family);
   display: inline-block;
 }
 .toggle-menu i {
@@ -514,7 +531,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .profile-name {
-  font-family: 'robotoregular';
+  font-family: var(--main-font-family);
   font-size: 18px;
 }
 

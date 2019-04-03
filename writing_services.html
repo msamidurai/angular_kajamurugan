@@ -30,39 +30,6 @@
 		<!-- modernizr css -->
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-<style>
-	.logo h1::first-letter {
-	  font-size: 200%;
-	  color: #33A2D4;
-	}
-
-	.bgcolor .service-wrap:hover{
-    background: #CBCBCB;
-}
-
-
-#cssLoader3 .loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid blue;
-  border-bottom: 16px solid blue;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-</style>
-
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -187,7 +154,7 @@
 		<!-- heared area end -->
 
         <!-- contact-area start -->
-        <div class="contact-area ptb-100" style="border:1px solid blue;">
+        <div class="contact-area ptb-100" style="border:1px solid #ECEAE9;">
             <div class="container">
 
                 <div class="row">
@@ -203,7 +170,6 @@
                         <div class="contact-wrap">
                             <img src="assets/images/writer.jpg">
                             <p>&emsp; Kaja murugan offer a range of editorial and writing services. kajamurugan area is copywriting for marketing communications, including social media. kaja offers manuscript evaluations, line editing and ‘fixing’ services.</p><br>
-                            <p>&emsp;Wherever you’re based, you can contact either of them here for more information on services and rates:</p>
 
                         </div>
                     </div>
@@ -281,39 +247,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="assets/js/wow.min.js"></script>
         <!-- plugins js -->
         <script src="assets/js/plugins.js"></script>
-        <!-- google map -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbeBYsZSDkbIyfUkoIw1Rt38eRQOQQU0o"></script>
-		<script>
-            function initialize() {
-                var mapOptions = {
-                    zoom: 15,
-                    scrollwheel: false,
-                    center: new google.maps.LatLng(13.0034, 80.1080),
-                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#222222"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#222222"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#222222"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#222222"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#222222"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#222222"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":17}]}]
-                };
 
-                var map = new google.maps.Map(document.getElementById('googleMap'),
-                    mapOptions);
-
-
-                var icon = {
-                    url: "assets/images/icon.png", // url
-                    scaledSize: new google.maps.Size(100, 100), // scaled size
-                };
-
-                var marker = new google.maps.Marker({
-                    position: map.getCenter(),
-                    animation: google.maps.Animation.BOUNCE,
-                    map: map,
-                    icon: icon
-
-                });
-
-                new google.maps.Size(42,68)
-            }
-
-            google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
         <!-- main js -->
         <script src="assets/js/scripts.js"></script>
     </body>

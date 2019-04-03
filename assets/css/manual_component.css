@@ -1,6 +1,7 @@
 .bk-list {
 	list-style: none;
 	position: relative;
+	height:500px;
 }
 
 .bk-list li {
@@ -9,9 +10,10 @@
 	height:100%;
 	/*float: left;
 	z-index: 1;*/
-	margin: 50px 10px 400px 10px;
+	margin-top: 10%;
 	-webkit-perspective: 1800px;
 	perspective: 1800px;
+	border:0px solid red;
 }
 
 .bk-list li:last-child {

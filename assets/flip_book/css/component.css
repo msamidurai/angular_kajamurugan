@@ -1,3 +1,18 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800');
+@import url('https://www.w3schools.com/whatis/tryit.asp?font=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Russo%20One');
+
+:root {
+  --main-bg-color: #fff;;
+  --main-font-family: 'Russo One';
+  --main-color: #555;
+  --main-line-height: 26px;
+  --main-h2-color: #296DC1;
+}
+
+
+
 .bk-list {
 	list-style: none;
 	position: relative;
@@ -230,7 +245,7 @@
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 50px;
+	left: 15px;
 	bottom: 0;
 	width: 3px;
 	background: rgba(0,0,0,0.06);
@@ -258,7 +273,7 @@
 	left: 20px;
 	bottom: 20px;
 	right: 20px;
-	padding: 30px;
+	padding: 10px;
 	overflow: hidden;
 	background: #fff;
 	opacity: 0;
@@ -276,11 +291,11 @@
 }
 
 .bk-content p {
-	padding: 0 0 10px;
+	padding: 0 0 5px;
 	-webkit-font-smoothing: antialiased;
 	color: #000;
 	font-size: 13px;
-	line-height: 20px;
+	line-height: 15px;
 	text-align: justify;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -350,11 +365,13 @@
 
 .book-1 .bk-cover h2 span:last-child,
 .book-1 .bk-left h2 span:last-child {
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 }
 
 .book-1 .bk-content p {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-1 .bk-left h2 {
@@ -368,9 +385,11 @@
 .book-1 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	padding: 75px;
+	padding: 40px;
 	text-align: center;
 	font-weight: 700;
+
+
 }
 
 /* Book 2 */
@@ -391,7 +410,8 @@
 .book-2 .bk-cover h2,
 .book-2 .bk-left h2 {
 	color: #fff;
-	font-family: 'the_godfatherregular', Georgia, serif;
+	//font-family: 'the_godfatherregular', Georgia, serif;
+	font-family: var(--main-font-family);
 	font-weight: 400;
 }
 
@@ -408,7 +428,8 @@
 
 .book-2 .bk-cover h2 span:first-child:before {
 	content: 'A novel';
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 	text-transform: uppercase;
 	position: absolute;
 	color: red;
@@ -431,7 +452,8 @@
 	position: absolute;
 	top: -32px;
 	left: 62px;
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 }
 
 .book-2 .bk-cover h2 span:last-child:after {
@@ -455,7 +477,8 @@
 .book-2 .bk-back p {
 	color: red;
 	font-size: 13px;
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 }
@@ -500,7 +523,8 @@
 .book-3 .bk-cover h2 span:last-child,
 .book-3 .bk-left h2 span:last-child,
 .book-3 .bk-content p  {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-3 .bk-left h2 {
@@ -519,7 +543,8 @@
 .book-3 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
@@ -564,11 +589,13 @@
 
 .book-4 .bk-cover h2 span:last-child,
 .book-4 .bk-left h2 span:last-child {
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 }
 
 .book-4 .bk-content p {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-4 .bk-left h2 {
@@ -628,7 +655,8 @@
 .book-5 .bk-cover h2 span:last-child,
 .book-5 .bk-left h2 span:last-child,
 .book-5 .bk-content p  {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-5 .bk-left h2 {
@@ -647,7 +675,8 @@
 .book-5 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
@@ -694,7 +723,8 @@
 .book-6 .bk-cover h2 span:last-child,
 .book-6 .bk-left h2 span:last-child,
 .book-6 .bk-content p  {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-6 .bk-left h2 {
@@ -713,7 +743,8 @@
 .book-6 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
@@ -761,7 +792,8 @@
 .book-7 .bk-cover h2 span:last-child,
 .book-7 .bk-left h2 span:last-child,
 .book-7 .bk-content p  {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-7 .bk-left h2 {
@@ -780,7 +812,8 @@
 .book-7 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
@@ -846,11 +879,13 @@
 
 .book-slider_1 .bk-cover h2 span:last-child,
 .book-slider_1 .bk-left h2 span:last-child {
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	//font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: var(--main-font-family);
 }
 
 .book-slider_1 .bk-content p {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-slider_1 .bk-left h2 {
@@ -912,7 +947,8 @@
 .book-slider_2 .bk-cover h2 span:last-child,
 .book-slider_2 .bk-left h2 span:last-child,
 .book-slider_2 .bk-content p  {
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 }
 
 .book-slider_2 .bk-left h2 {
@@ -931,7 +967,8 @@
 .book-slider_2 .bk-back p {
 	color: #fff;
 	font-size: 13px;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	//font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: var(--main-font-family);
 	padding: 40px;
 	text-align: center;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
