@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-locale:en": "ng build --prod --i18n-locale en --i18n-format xlf --i18n-file src/translate/messages.en.xlf --output-path=dist/en --baseHref /en/",
+    "build-locale:es": "ng build --prod --i18n-locale es --i18n-format xlf --i18n-file src/translate/messages.es.xlf --output-path=dist/es --baseHref /es/",
+    "build-locale:hi": " ng build --prod --i18n-locale hi --i18n-format xlf --i18n-file src/translate/messages.hi.xlf --output-path=dist/hi --baseHref /hi/",
+    "build-locale": "npm run build-locale:en && npm run build-locale:es && npm run build-locale:hi"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +23,16 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "angular-font-awesome": "^3.1.2",
+    "bootstrap": "^3.4.1",
     "core-js": "^2.5.4",
+    "desandro-classie": "^1.0.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.0",
+    "ngx-bootstrap": "^4.0.1",
+    "ngx-owl-carousel": "^2.0.7",
+    "ngx-owl-carousel-o": "^1.1.2",
+    "owl.carousel": "^2.3.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
