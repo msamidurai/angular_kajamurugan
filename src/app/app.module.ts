@@ -13,6 +13,11 @@ import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OwlModule } from 'ngx-owl-carousel';
+import { WritingServicesComponent } from './writing-services/writing-services.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { BooksComponent } from './books/books.component';
+import { ShortStoryComponent } from './short-story/short-story.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { OwlModule } from 'ngx-owl-carousel';
     FooterComponent,
     AboutComponent,
     SidebarComponent,
-    HomeComponent
+    HomeComponent,
+    WritingServicesComponent,
+    BlogComponent,
+    ContactComponent,
+    BooksComponent,
+    ShortStoryComponent
   ],
   imports: [
     BrowserModule,
