@@ -31,10 +31,24 @@
 
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              /* "node_modules/bootstrap/dist/js/bootstrap.min.js",  */
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/owl.carousel/dist/owl.carousel.min.js",
-              "node_modules/desandro-classie/classie.js"
+              "node_modules/desandro-classie/classie.js",
+              "src/assets/js/vendor/jquery-1.12.4.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/counterup.main.js",
+              "src/assets/js/imagesloaded.pkgd.min.js",
+              "src/assets/js/isotope.pkgd.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/jquery.slicknav.min.js",
+              "src/assets/js/snake.min.js",
+              "src/assets/js/wow.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/scripts.js",
+              "src/assets/js/books1.js",
+              "src/assets/js/main.js"
+
             ],
             "es5BrowserSupport": true
           },

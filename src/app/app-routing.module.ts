@@ -7,9 +7,13 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { BooksComponent } from './books/books.component';
 import { ShortStoryComponent } from './short-story/short-story.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { StoryContantComponent } from './story-contant/story-contant.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
 
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomeComponent },
   { path: 'about',  component: AboutComponent },
   { path: 'book',  component: BooksComponent },
@@ -17,10 +21,11 @@ const routes: Routes = [
   { path: 'writing-services',  component: WritingServicesComponent },
   { path: 'blog',  component: BlogComponent },
   { path: 'contact',  component: ContactComponent },
+  { path: 'book-details',  component: BookDetailsComponent },
+  { path: 'story-contant',  component: StoryContantComponent },
 
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: HomeComponent }
-
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '/404'},
 
 ];
 

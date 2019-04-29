@@ -18,6 +18,9 @@ import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { BooksComponent } from './books/books.component';
 import { ShortStoryComponent } from './short-story/short-story.component';
+import { BookDetailsComponent } from './book-details/book-details.component';
+import { StoryContantComponent } from './story-contant/story-contant.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { ShortStoryComponent } from './short-story/short-story.component';
     BlogComponent,
     ContactComponent,
     BooksComponent,
-    ShortStoryComponent
+    ShortStoryComponent,
+    BookDetailsComponent,
+    StoryContantComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
