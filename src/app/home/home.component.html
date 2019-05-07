@@ -15,34 +15,34 @@
 
 					</div>
 
-					<div class="col-md-6 col-xs-12 text-center" style="border:0px solid green;">
+					<div class="col-md-6 col-xs-12">
 
               <owl-carousel-o [options]="customOptions">
 
                 <ng-template carouselSlide>
-                    <ul class="bk-list clearfix" style="border:0px solid red;">
-											<li style="border:0px solid green;">
-												<div class="bk-book book-1 bk-bookdefault">
+                    <ul class="bk-list clearfix">
+											<li>
+												<div class="bk-book book-1 bk-bookdefault" style="margin-left:10%">
 													<div class="bk-front">
 														<div class="bk-cover-back"></div>
 														<div class="bk-cover">
 															<h2>
-																<span>J.C. Salinger</span>
-																<span>The Catcher in the Rye</span>
+																<span i18n>J.C. Salinger</span>
+																<span i18n>The Catcher in the Rye</span>
 															</h2>
 														</div>
 													</div>
 
 													 <div class="bk-back">
 														<img src="assets/images/home/3.png" alt="cat"/>
-														<p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
+														<p i18n>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
 													</div>
 
 													<div class="bk-right"></div>
 													<div class="bk-left">
 														<h2>
-															<span>J.C. Salinger</span>
-															<span>The Catcher in the Rye</span>
+															<span i18n>J.C. Salinger</span>
+															<span i18n>The Catcher in the Rye</span>
 														</h2>
 													</div>
 												</div>
@@ -55,27 +55,27 @@
 
                     <ul class="bk-list clearfix">
 											<li>
-												<div class="bk-book book-3 bk-bookdefault">
+												<div class="bk-book book-3 bk-bookdefault" style="margin-left:10%">
 													<div class="bk-front">
 														<div class="bk-cover-back"></div>
 														<div class="bk-cover">
 															<h2>
-																<span>J.C. Salinger</span>
-																<span>The Catcher in the Rye</span>
+																<span i18n>J.C. Salinger</span>
+																<span i18n>The Catcher in the Rye</span>
 															</h2>
 														</div>
 													</div>
 
 													<div class="bk-back">
 														<img src="assets/images/home/3.png" alt="cat"/>
-														<p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
+														<p i18n>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
 													</div>
 
 													<div class="bk-right"></div>
 													<div class="bk-left">
 														<h2>
-															<span>J.C. Salinger</span>
-															<span>The Catcher in the Rye</span>
+															<span i18n>J.C. Salinger</span>
+															<span i18n>The Catcher in the Rye</span>
 														</h2>
 													</div>
 												</div>
@@ -88,27 +88,27 @@
 
                       <ul class="bk-list clearfix">
 											<li>
-												<div class="bk-book book-4 bk-bookdefault">
+												<div class="bk-book book-4 bk-bookdefault"  style="margin-left:10%">
 													<div class="bk-front">
 														<div class="bk-cover-back"></div>
 														<div class="bk-cover">
 															<h2>
-																<span>J.C. Salinger</span>
-																<span>The Catcher in the Rye</span>
+																<span i18n>J.C. Salinger</span>
+																<span i18n>The Catcher in the Rye</span>
 															</h2>
 														</div>
 													</div>
 
 													<div class="bk-back">
 														<img src="assets/images/home/3.png" alt="cat"/>
-														<p>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
+														<p i18n>Holden Catfield is a seventeen-year-old dropout who has just been kicked out of his fourth school.</p>
 													</div>
 
 													<div class="bk-right"></div>
 													<div class="bk-left">
 														<h2>
-															<span>J.C. Salinger</span>
-															<span>The Catcher in the Rye</span>
+															<span i18n>J.C. Salinger</span>
+															<span i18n>The Catcher in the Rye</span>
 														</h2>
 													</div>
 												</div>
@@ -135,7 +135,7 @@
 				<div class="row">
 					<div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
 						<div class="section-title section-title2">
-							<h2>New Release</h2>
+							<h2 i18n>New Release</h2>
 						</div>
 					</div>
 				</div>
@@ -144,7 +144,7 @@
           <div class="col-md-12 col-sm-10 col-xs-12 col wow fadeInUp" data-wow-delay=".3s" style="border:0px solid red;">
             <div style="text-align:center">
 
-              <owl-carousel-o [options]="customOptions_slider">
+              <owl-carousel-o [options]="customOptions_slider" >
 
                 <ng-template carouselSlide>
 
@@ -153,9 +153,9 @@
 										<ul class='hardcover_front'>
 											<li>
 												<div class="coverDesign maroon">
-													<span class="ribbon">NEW</span>
-													<h1>Maya Ulagam</h1>
-													<p>Kaja Murugan</p>
+													<span class="ribbon" i18n>NEW</span>
+													<h1 i18n>Maya Ulagam</h1>
+													<p i18n>Kaja Murugan</p>
 												</div>
 											</li>
 											<li></li>
@@ -165,7 +165,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -200,7 +200,7 @@
                     <ul class='page'>
                       <li></li>
                       <li>
-                        <a class="btn" routerLink="/book-details">Details</a>
+                        <a class="btn" routerLink="/book-details" i18n>Details</a>
                       </li>
                       <li></li>
                       <li></li>
@@ -226,9 +226,9 @@
 										<ul class='hardcover_front'>
 											<li>
 												<div class="coverDesign yellow">
-													<span class="ribbon">NEW</span>
-													<h1>Maaya Ulagam</h1>
-													<p>Kaja Murugan</p>
+													<span class="ribbon" i18n>NEW</span>
+													<h1 i18n>Maaya Ulagam</h1>
+													<p i18n>Kaja Murugan</p>
 												</div>
 											</li>
 											<li></li>
@@ -238,7 +238,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -262,7 +262,7 @@
                     <figure class='book'>
 										<!-- Front -->
 										<ul class='hardcover_front'>
-											<span class="ribbon">NEW</span>
+											<span class="ribbon" i18n>NEW</span>
 											<li>
 												<img src="assets/images/home/maaya_ulagam.jpg" alt="">
 											</li>
@@ -273,7 +273,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -299,9 +299,9 @@
 										<ul class='hardcover_front'>
 											<li>
 												<div class="coverDesign blue">
-													<span class="ribbon">NEW</span>
-													<h1>Maaya Ulagam</h1>
-													<p>Kaja Murugan</p>
+													<span class="ribbon" i18n>NEW</span>
+													<h1 i18n>Maaya Ulagam</h1>
+													<p i18n>Kaja Murugan</p>
 												</div>
 											</li>
 											<li></li>
@@ -311,7 +311,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -335,7 +335,7 @@
                     <figure class='book'>
 										<!-- Front -->
 										<ul class='hardcover_front'>
-											<span class="ribbon">NEW</span>
+											<span class="ribbon" i18n>NEW</span>
 											<li>
 												<img src="assets/images/home/maaya_ulagam.jpg" alt="">
 											</li>
@@ -346,7 +346,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -372,9 +372,9 @@
 										<ul class='hardcover_front'>
 											<li>
 												<div class="coverDesign blue">
-													<span class="ribbon">NEW</span>
-													<h1>Maaya Ulagam</h1>
-													<p>Kaja Murugan</p>
+													<span class="ribbon" i18n>NEW</span>
+													<h1 i18n>Maaya Ulagam</h1>
+													<p i18n>Kaja Murugan</p>
 												</div>
 											</li>
 											<li></li>
@@ -384,7 +384,7 @@
 										<ul class='page'>
 											<li></li>
 											<li>
-												<a class="btn" routerLink="/book-details">Details</a>
+												<a class="btn" routerLink="/book-details" i18n>Details</a>
 											</li>
 											<li></li>
 											<li></li>
@@ -419,7 +419,7 @@
 				<div class="row">
 					<div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
 						<div class="section-title section-title2">
-							<h2>Our Special</h2>
+							<h2 i18n>Our Special</h2>
 							</div>
 					</div>
 				</div>
@@ -436,7 +436,7 @@
 
 							</div>
 							<div class="service-content">
-								<a routerLink="book_details">More Details</a>
+								<a routerLink="/book_details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -447,7 +447,7 @@
 								<img src="assets/images/home/sp2.jpeg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -458,7 +458,7 @@
 								<img src="assets/images/home/sp4.jpeg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -469,7 +469,7 @@
 								<img src="assets/images/home/sp5.jpg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -480,7 +480,7 @@
 								<img src="assets/images/home/maaya_ulagam.jpg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -491,7 +491,7 @@
 								<img src="assets/images/home/book.jpg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -502,7 +502,7 @@
 								<img src="assets/images/home/book3.jpg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -513,7 +513,7 @@
 								<img src="assets/images/home/cover.jpg" alt="" />
 							</div>
 							<div class="service-content">
-								<a routerLink="/book-details">More Details</a>
+								<a routerLink="/book-details" i18n>More Details</a>
 							</div>
 						</div>
 					</div>
@@ -529,7 +529,7 @@
 				<div class="row">
 					<div class="col-md-7 col-sm-10 col-xs-12 wow fadeInUp">
 						<div class="section-title section-title2">
-							<h2>Our Awards</h2>
+							<h2 i18n>Our Awards</h2>
 						</div>
 					</div>
 				</div>
@@ -544,10 +544,10 @@
 								<div class="info">
 									<header>
 										<!--<img src="assets/images/awards/still01.jpg" alt="">-->
-										<h4> Best Writer Awards</h4>
-										<h6 style="float:right">Date: Jan-01-2020</h6>
+										<h4 i18n> Best Writer Awards</h4>
+										<h6 style="float:right" i18n>Date: Jan-01-2020</h6>
 									</header>
-									<p>
+									<p i18n>
 										<span style="color:blue">&emsp;I</span>n Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
 									</p>
 								</div>
@@ -562,10 +562,10 @@
 								<div class="info">
 									<header>
 										<!--<img src="assets/images/awards/still01.jpg" alt="">-->
-										<h4> Best Story Awards</h4>
-										<h6 style="float:right">Date: Jan-01-2020</h6>
+										<h4 i18n> Best Story Awards</h4>
+										<h6 style="float:right" i18n>Date: Jan-01-2020</h6>
 									</header>
-									<p>
+									<p i18n>
 										<span style="color:blue">&emsp;I</span>n Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
 									</p>
 								</div>
@@ -580,10 +580,10 @@
 								<div class="info">
 									<header>
 										<!--<img src="assets/images/awards/still01.jpg" alt="">-->
-										<h4> Best Story Awards</h4>
-										<h6 style="float:right">Date: Jan-01-2020</h6>
+										<h4 i18n> Best Story Awards</h4>
+										<h6 style="float:right" i18n>Date: Jan-01-2020</h6>
 									</header>
-									<p>
+									<p i18n>
 										<span style="color:blue">&emsp;I</span>n Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
 									</p>
 								</div>

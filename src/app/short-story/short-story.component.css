@@ -33,7 +33,7 @@ body {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    border:1px solid red;
+    border:0px solid red;
 }
 
 .bookshelf {
@@ -51,7 +51,7 @@ body {
     max-width: 75%;
     width: 324px;
     vertical-align: top;
-    border:3px solid red;
+    border:0px solid red;
 }
 
 /* Perspectiv wrapper, figure and book */

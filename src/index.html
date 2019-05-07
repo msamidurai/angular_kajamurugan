@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>KajamuruganApp</title>
+  <title i18n> Kaja Murugan || Book </title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,6 @@
 
   <div id="main">
 
-      <app-root>
 
       <div id="cssLoader3" class="preloder-wrap">
         <div class="loader">
@@ -27,29 +26,31 @@
           <figure class="page"></figure>
           <figure class="page"></figure>
         </div>
-        <h1>Reading</h1>
+        <h1 i18n>Reading</h1>
       </div>
 
-      </app-root>
 
       <div class="search-area">
-            <span class="closs-btn">Close</span>
+            <span class="closs-btn" i18n>Close</span>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div class="search-form">
                             <form action="#">
                                 <input type="text" name="search" placeholder="Search Here">
-                                <button type="button" name="button" class="btn-style">Search</button>
+                                <button type="button" name="button" class="btn-style" i18n>Search</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+       </div>
 
-  </div>
 
+    <app-root></app-root>
+
+
+</div>
 
     <script>
 			function openNav() {
@@ -62,7 +63,38 @@
 
 		</script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbeBYsZSDkbIyfUkoIw1Rt38eRQOQQU0o"></script>
+    <script>
+            function initialize() {
+                var mapOptions = {
+                    zoom: 15,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(13.0034, 80.1080),
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#222222"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#222222"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#222222"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#222222"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#222222"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#222222"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#222222"},{"lightness":17}]}]
+                };
 
+                var map = new google.maps.Map(document.getElementById('googleMap'),
+                    mapOptions);
+
+
+                var icon = {
+                    url: "assets/images/contact/icon.png", // url
+                    scaledSize: new google.maps.Size(100, 100), // scaled size
+                };
+
+                var marker = new google.maps.Marker({
+                    position: map.getCenter(),
+                    animation: google.maps.Animation.BOUNCE,
+                    map: map,
+                    icon: icon
+
+                });
+
+                new google.maps.Size(42,68)
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 
 </body>
 </html>

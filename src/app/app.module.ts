@@ -37,7 +37,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     ShortStoryComponent,
     BookDetailsComponent,
     StoryContantComponent,
-    NotfoundComponent
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,

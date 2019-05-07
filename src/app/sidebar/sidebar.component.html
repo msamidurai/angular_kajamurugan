@@ -1,56 +1,61 @@
       <div class="hidden-md hidden-lg col-sm-12 col-xs-12">
 				<div class="logo text-center">
 					<!--<img src="assets/images/logo.png" width="100" height="100">-->
-					<h1><a href="index.html">Kaja <img src="assets/images/title1.png" style="width:30px;margin-top:0px"> Murugan</a></h1>
+					<h1 i18n><a href="index.html">Kaja <img src="assets/images/title1.png" style="width:30px;margin-top:0px"> Murugan</a></h1>
 				</div>
 			</div>
 
 
-      <button class="openbtn" onclick="openNav()" id="openbtn" style="height:50px;"><i class="fa fa-book icon-spin"></i> Menu </button>
-
+      <button class="openbtn" onclick="openNav()" id="openbtn" style="height:50px;" i18n><i class="fa fa-book icon-spin"></i> Menu </button>
 
 				<div id="mySidebar" class="sidebar">
 					<ul id="main_menu" class="main_menu">
 						<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
-						<li class="active"><a routerLink="/home">Home </a></li>
-						<li><a routerLink="/about">About </a></li>
-						<li><a routerLink="/book">Books </a></li>
-						<li><a routerLink="/short-story">Short Story </a></li>
-						<li><a routerLink="/writing-services" class="active">Writing Services</a></li>
-						<li><a routerLink="/blog">Blog</a></li>
-						<li><a routerLink="/contact">Contact</a></li>
-					</ul>
+						<li class="active" i18n><a routerLink="/home">Home </a></li>
+						<li i18n><a routerLink="/about">About </a></li>
+						<li i18n><a routerLink="/book">Books </a></li>
+						<li i18n><a routerLink="/short-story">Short Story </a></li>
+						<li i18n><a routerLink="/writing-services" class="active">Writing Services</a></li>
+						<li i18n><a routerLink="/blog">Blog</a></li>
+            <li i18n><a routerLink="/contact">Contact</a></li>
+ 					</ul>
 				</div>
 
 
-			<div class="col-md-3 hidden-sm hidden-xs" id="lang_index" style="float:right;padding:5px;">
+          <div class="hidden-sm hidden-xs" id="lang_index" style="float:right; padding:0px;">
+      <div class="mainmenu">
+        <ul id="navigation">
+          <li class="active" i18n><a routerLink="/home">Sel Lang<i class="fa fa-angle-down"></i></a>
+            <ul class="submenu">
+              <li *ngFor="let language of languageList"><a href="/{{language.code}}/">{{language.label}}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  	</div>
 
-        <ng-container *ngFor="let language of languageList">
-           <a href="/{{language.code}}/">
-             <button type="button" name="button" class="btn-style">{{language.label}}</button>
-           </a>
-        </ng-container>
 
-			</div>
-
-
-			<div class="col-md-4 hidden-sm hidden-xs" style="float:right;padding:0px;">
+    <div class="col-md-4 hidden-sm hidden-xs" style="float:right;padding:0px;">
 				<div class="search-form" id="lang_1">
 					<form action="#">
 						<input type="text" name="search" placeholder="Search Here">
-						<button type="button" name="button" class="btn-style">Search</button>
+						<button type="button" name="button" class="btn-style" i18n>Search</button>
 					</form>
 				</div>
-			</div>
+    </div>
 
 
-			<div class="hidden-md hidden-lg col-sm-4 col-xs-4" style="float:right; border:0px solid red;">
+      <div class="hidden-md hidden-lg" style="float:right;border:0px solid red;">
 
-				 <ng-container *ngFor="let language of languageList">
-           <a href="/{{language.code}}/">
-             <button type="button" name="button" class="btn-style">{{language.label}}</button>
-           </a>
-        </ng-container>
+          <div class="mainmenu">
+            <ul id="navigation">
+              <li class="active" i18n><a href="index.html">Sel Lang<i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li *ngFor="let language of languageList"><a href="/{{language.code}}/">{{language.label}}</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
 
 			</div>
 
@@ -64,4 +69,4 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div >
